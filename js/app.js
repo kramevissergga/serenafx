@@ -3542,7 +3542,6 @@
             }));
         }));
     }
-    window["FLS"] = true;
     menuInit();
     pageNavigation();
     headerScroll();
