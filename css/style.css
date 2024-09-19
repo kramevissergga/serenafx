@@ -520,10 +520,6 @@ h6 {
   color: #fff;
   transition: all .3s
 }
-._header-scroll .button {
-  padding-top: .5rem;
-  padding-bottom: .5rem
-}
 .button::before {
   font-size: 1rem
 }
@@ -758,17 +754,8 @@ h6 {
 }
 .footer__link {
   position: relative;
-  padding-bottom: .125rem
-}
-.footer__link::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 100%;
-  width: 0;
-  height: .125rem;
-  background-color: #fff;
-  transition: width .4s
+  padding-bottom: .125rem;
+  transition: color .3s
 }
 .footer__copy {
   position: relative;
@@ -1642,6 +1629,10 @@ h6 {
   }
 }
 @media (min-width:34.37375em) {
+  ._header-scroll .button {
+    padding-top: .5rem;
+    padding-bottom: .5rem
+  }
   .header._header-scroll {
     padding-top: .625rem;
     padding-bottom: .625rem
@@ -2569,8 +2560,8 @@ h6 {
   .bank-header__link:hover {
     color: #5b3585
   }
-  .footer__link:hover::before {
-    width: 100%
+  .footer__link:hover {
+    color: #fff
   }
   .footer__up:hover {
     color: #5b3585
