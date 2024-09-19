@@ -643,10 +643,6 @@ h6 {
   z-index: 50;
   transition: background-color .3s,padding .3s
 }
-.header._header-scroll {
-  padding-top: .625rem;
-  padding-bottom: .625rem
-}
 .header__logo {
   position: relative;
   z-index: 2
@@ -1646,6 +1642,10 @@ h6 {
   }
 }
 @media (min-width:34.37375em) {
+  .header._header-scroll {
+    padding-top: .625rem;
+    padding-bottom: .625rem
+  }
   .hero__exchange {
     max-width: 29.25rem
   }
@@ -1837,9 +1837,6 @@ h6 {
     padding: 6.375rem 1.25rem 1.875rem 1.25rem;
     transition: left .3s
   }
-  ._header-scroll .menu__body {
-    padding-top: 5.4375rem
-  }
   .menu__body::before {
     content: "";
     position: fixed;
@@ -1850,9 +1847,6 @@ h6 {
     transition: left .3s;
     z-index: 2;
     background-color: #fff
-  }
-  ._header-scroll .menu__body::before {
-    height: 4.5rem
   }
   .menu-open .menu__body {
     left: 0
@@ -2346,6 +2340,14 @@ h6 {
 @media (max-width:120em)and (min-width:52.125em) {
   .menu__body {
     padding: 7.23125rem 3.125rem 1.875rem 3.125rem
+  }
+}
+@media (max-width:120em)and (min-width:34.37375em) {
+  ._header-scroll .menu__body {
+    padding-top: 5.4375rem
+  }
+  ._header-scroll .menu__body::before {
+    height: 4.5rem
   }
 }
 @media (min-width:26.875em)and (max-width:78.0625em) {
